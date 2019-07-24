@@ -39,6 +39,24 @@ body {
 		width: 200px;
 		height: 300px;
 		margin: 10px;
-		background: red;
+		background: red !important;
+
+		img {
+			display: none;
+		}
+
+		&.flipped {
+			img {
+				display: block;
+			}
+		}
+
+		&.matched {
+			pointer-events: none;
+			opacity: 0.5;
+			img {
+				display: block;
+			}
+		}
 	}
 }

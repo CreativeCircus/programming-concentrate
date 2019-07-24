@@ -87,7 +87,24 @@ body {
 	width: 200px;
 	height: 300px;
 	margin: 10px;
-	background: red;
+	background: red !important;
+}
+
+.game li img {
+	display: none;
+}
+
+.game li.flipped img {
+	display: block;
+}
+
+.game li.matched {
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+.game li.matched img {
+	display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
